@@ -1,0 +1,32 @@
+/* pages/home/home.wxss */
+.home{
+    /* 这是tabbar占据的高度 */
+    padding-bottom: 110rpx;
+}
+swiper-item image{
+    width: 100%;
+}
+.main{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main navigator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 20rpx;
+    border:1rpx solid rgb(231, 227, 227,.3);
+    width: 250rpx;
+    height:200rpx ;
+}
+.main navigator image{
+    width: 60rpx;
+}
+
+.main ul{
+    display: flex;
+    flex-wrap: wrap;
+}

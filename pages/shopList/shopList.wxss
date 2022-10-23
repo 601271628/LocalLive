@@ -1,0 +1,67 @@
+/* pages/shopList/shopList.wxss */
+.shop{
+    background-color: #faf2f2;
+    overflow: hidden;
+    padding: 16rpx;
+}
+
+.shop ul li{
+    display: block;
+    padding: 20rpx;
+    margin: 20rpx 0;
+    height: 230rpx;
+    background-color: #fff;
+    border: 1px solid rgb(230, 225, 225);
+    border-radius: 20rpx;
+}
+.right,.left{
+    float: left;
+}
+.left{
+    margin-right: 20rpx;
+    width: 200rpx;
+    height: 230rpx;
+}
+.right{
+    width: 450rpx;
+    height: 230rpx;
+}
+.left image{
+    width: 100%;
+    height: 100%;
+}
+
+.right rich-text{
+    font-size: 27rpx;
+    display: block;
+    margin-top: 15rpx;
+}
+.right rich-text:nth-of-type(1){
+    margin-top: 0;
+    font-size: 30rpx;
+    font-family: "幼圆";
+}
+
+/* 加载 */
+.bomTxt{
+    text-align: center;
+    height: 100rpx;
+    line-height: 100rpx;
+  }
+  
+.bomTxt  image{
+    width: 60rpx;
+    vertical-align: middle;
+    transform-origin: 50% 50% 0;
+    transform: rotate(0);
+    opacity: 0.5;
+    animation: loading 1s infinite linear;
+}
+  
+@keyframes loading {
+    to{
+        transform: rotate(360deg);
+    }from{
+        transform: rotate(0);
+    }
+}

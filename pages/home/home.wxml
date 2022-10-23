@@ -1,0 +1,29 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+    <!-- 轮播图 -->
+    <swiper autoplay indicator-dots>
+        <swiper-item>
+            <image src="../../images/localLive/1.jpg" mode="widthFix"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../images/localLive/2.jpg" mode="widthFix"></image>
+        </swiper-item>
+    </swiper>
+
+    <!-- 九宫 -->
+    <view class="main">
+        <!-- <ul>
+            <li wx:for="{{list}}" wx:key="id">
+                <image src="{{item.icon}}" mode="widthFix"></image>
+                <text>{{item.name}}</text>
+            </li>
+        </ul> -->
+        <navigator url="/pages/shopList/shopList?id={{item.id}}&title={{item.name}}" open-type="navigate" wx:for="{{list }}" wx:key="id">
+            <image src="{{item.icon}}" mode="widthFix"></image>
+            <text>{{item.name}}</text>
+        </navigator>
+    </view>
+
+    <!-- 图片区 -->
+
+</view>

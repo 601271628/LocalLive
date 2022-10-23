@@ -1,0 +1,26 @@
+<view class="shop">
+    <ul>
+        <li wx:for="{{shopList}}" wx:key="index">
+            <view class="left">
+                <image src="{{item.imgSrc}}"  ></image>
+            </view>
+            <view class="right">
+                <rich-text nodes="<strong>{{item.title}}</strong>"></rich-text>
+                <rich-text nodes="<p>电话：{{m1.resolvePhone(item.phone)}}</p>"></rich-text>
+                <rich-text nodes="<p>地址：{{item.address}}</p>"></rich-text>
+                <rich-text nodes="<p>停营业间：{{item.time}}</p>"></rich-text>
+            </view>
+        </li>
+    </ul>
+
+    <!-- 下拉刷新 -->
+    <view class="bomTxt">
+        <view hidden="{{!loading}}">
+        <image src="../../images/loading/loading.png" mode="widthFix" ></image>
+        </view>
+        <view hidden="{{!loaded}}">到底了哟~~</view>
+    </view>
+</view>
+
+
+<wxs src="../../utils/tool.wxs" module="m1"></wxs>

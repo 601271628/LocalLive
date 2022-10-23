@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "mobx-comp":"../../components/mobxComp/mobx-comp"
+    }
+}

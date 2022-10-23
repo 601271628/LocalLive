@@ -1,0 +1,72 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/message/message",
+        "pages/shopList/shopList",
+        "pages/index/index",
+        "pages/logs/logs",
+        "components/tabbar/tabbar",
+        "custom-tab-bar/index"
+    ],
+    "preloadRule": {
+        "pages/message/message": {
+            "packages": [
+                "p1"
+            ],
+            "network": "all"
+        }
+    },
+    "subPackages": [
+        {
+            "root": "pagesA",
+            "name": "p1",
+            "pages": [
+                "pages/cat/cat"
+            ]
+        },
+        {
+            "root": "pagesB",
+            "name": "p2",
+            "pages": [
+                "pages/login/login"
+            ],
+            "independent": true
+        }
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+
+        "navigationBarBackgroundColor": "#2c486c",
+        "navigationBarTitleText": "本地生活",
+        "navigationBarTextStyle": "white",
+
+        "backgroundColor": "#f1eeee"
+    },
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "custom": true,
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "./images/tabbar/home-2-line.png",
+                "selectedIconPath": "./images/tabbar/home-2-line-copy.png"
+            },
+            {
+                "pagePath": "pages/message/message",
+                "text": "消息",
+                "iconPath": "./images/tabbar/building-3-line.png",
+                "selectedIconPath": "./images/tabbar/building-3-line-copy.png"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "我的",
+                "iconPath": "./images/tabbar/building-2-line.png",
+                "selectedIconPath": "./images/tabbar/building-2-line-copy.png"
+            }
+        ]
+    },
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index"
+    }
+}

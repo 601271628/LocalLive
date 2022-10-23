@@ -1,0 +1,33 @@
+
+<!-- 使用vant组件 -->
+<view class="container">
+    <view>
+        <van-button type="default">默认按钮</van-button>
+        <van-button type="primary">主要按钮</van-button>
+        <van-button type="info">信息按钮</van-button>
+        <van-button type="warning" plain>警告按钮</van-button>
+        <van-button type="danger"  plain hairline>危险按钮</van-button>
+        <van-button icon="https://img.yzcdn.cn/vant/logo.png" type="info" plain>按钮</van-button>
+    </view>
+
+    <!-- 使用promise化的wx.p请求 -->
+    <view style="margin-top: 20px; text-align: center;">
+        <van-button type="warning" bindtap="req">发送请求(promise化)</van-button>
+    </view>
+
+    <!-- page使用vuex -->
+    <view class="mobx">page内：使用mobx（vuex）</view>
+    <view>numA:{{numA}}</view>
+    <view>numb:{{numB}}</view>
+    <view>numb:{{sum}}</view>
+    <button bindtap="operate" data-step="{{2}}">a+2</button>
+    <button bindtap="operate" data-step="{{-2}}">a-2</button>
+
+    <!-- 组件内使用vuex -->
+    <mobx-comp></mobx-comp>
+
+    <!-- page使用vuex -->
+    <view class="mobx">修改tabbat的info（messageNum）</view>
+    <button bindtap="addMessageNum" data-step="{{1}}">message+1</button>
+    <button bindtap="addMessageNum" data-step="{{-1}}">message-1</button>
+</view>

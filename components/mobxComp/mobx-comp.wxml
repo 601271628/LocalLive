@@ -1,0 +1,7 @@
+<!--components/mobx-comp.wxml-->
+<view class="mobx">组件内：使用mobx（vuex）</view>
+<view>numA:{{numA}}</view>
+<view>numb:{{numB}}</view>
+<view>sum:{{sum}}</view>
+<button bindtap="operate" data-step="{{2}}">b+2</button>
+<button bindtap="operate" data-step="{{-2}}">b-2</button>
